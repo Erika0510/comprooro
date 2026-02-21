@@ -66,15 +66,15 @@ export default function Home() {
           {/* TEXTO HERO */}
           <div className="flex-1 space-y-6">
             <p className="text-xs uppercase tracking-[0.3em] text-[#6B7280]">
-              COMPRA DE ORO · PLATA · RELOJES
+              COMPRA DE ORO · PLATA · RELOJES 
             </p>
 
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl text-[#222222]">
-              Oro, plata y Relojes
+              Oro, plata y Relojes en Quito Ecuador   
             </h1>
 
             <p className="max-w-xl text-sm text-[#6B7280]">
-              Negocio físico con atención segura y confiable. Trae tus piezas y
+              Negocio físico con atención segura y confiable en Quito Ecuador. Trae tus piezas y
               recibe una cotización justa según peso, material y estado.
             </p>
 
