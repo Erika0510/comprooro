@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Compra venta de oro, plata, joyas y relojes en Quito, Ecuador. Recibe valoración personalizada, atención directa y cotización por WhatsApp.",
+    "Compra y venta de oro, plata, joyas y relojes en Quito, Ecuador. Recibe valoración personalizada, atención directa y cotización por WhatsApp.",
 
   keywords: [
     "comprar oro Quito",
@@ -130,7 +130,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
