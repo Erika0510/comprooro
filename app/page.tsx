@@ -296,7 +296,7 @@ export default function Home() {
 
           <div className="space-y-2">
             <p className="text-sm font-semibold text-[#222222]">Horario</p>
-            <p>Lunes a sábado:</p>
+            <p>Lunes a viernes:</p>
             <p>9:00 a.m. – 6:00 p.m.</p>
             <p className="mt-2 text-[11px]">
               *Horarios especiales en festivos, confirmar por WhatsApp.
