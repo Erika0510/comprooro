@@ -45,30 +45,30 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-  title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
-  description:
-    "Compramos oro, plata, joyas y relojes en Quito. Solicita una valoración y cotización por WhatsApp.",
-  url: "https://comprooroplatajoya.vercel.app",
-  siteName: "Compro Oro & Relojes",
-  locale: "es_EC",
-  type: "website",
-  images: [
-    {
-      url: "/opengraph-image.png",
-      width: 1200,
-      height: 630,
-      alt: "Compro Oro & Relojes en Quito",
-    },
-  ],
-},
+    title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
+    description:
+      "Compramos oro, plata, joyas y relojes en Quito. Solicita una valoración y cotización por WhatsApp.",
+    url: "https://comprooroplatajoya.vercel.app",
+    siteName: "Compro Oro & Relojes",
+    locale: "es_EC",
+    type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Compro Oro & Relojes en Quito",
+      },
+    ],
+  },
 
   twitter: {
-  card: "summary_large_image",
-  title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
-  description:
-    "Compramos oro, plata, joyas y relojes en Quito, Ecuador. Cotiza tus piezas de forma directa.",
-  images: ["/opengraph-image.png"],
-},
+    card: "summary_large_image",
+    title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
+    description:
+      "Compramos oro, plata, joyas y relojes en Quito, Ecuador. Cotiza tus piezas de forma directa.",
+    images: ["/opengraph-image.png"],
+  },
 
   robots: {
     index: true,
@@ -78,6 +78,50 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+
+  name: "Compro Oro & Relojes",
+
+  description:
+    "Compra y venta de oro, plata, joyas y relojes en Quito, Ecuador.",
+
+  url: "https://comprooroplatajoya.vercel.app",
+
+  image:
+    "https://comprooroplatajoya.vercel.app/opengraph-image.png",
+
+  address: {
+    "@type": "PostalAddress",
+    streetAddress:
+      "Avenida La Coruña y 12 de Octubre, Condominio General Artigas",
+    addressLocality: "Quito",
+    addressRegion: "Pichincha",
+    addressCountry: "EC",
+  },
+
+  areaServed: {
+    "@type": "City",
+    name: "Quito",
+  },
+
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+      ],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -90,6 +134,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+
         {children}
       </body>
     </html>
