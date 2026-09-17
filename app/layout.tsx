@@ -13,9 +13,62 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
+  metadataBase: new URL("https://comprooroplatajoya.vercel.app"),
+
+  title: {
+    default: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
+    template: "%s | Compro Oro & Relojes",
+  },
+
   description:
-    "Compramos oro, plata, joyas y relojes en Quito, Ecuador. Valoración personalizada, atención directa y cotización por WhatsApp.",
+    "Compra y venta de oro, plata, joyas y relojes en Quito, Ecuador. Recibe valoración personalizada, atención directa y cotización por WhatsApp.",
+
+  keywords: [
+    "comprar oro Quito",
+    "vender oro Quito",
+    "compra de oro Quito",
+    "venta de oro Quito",
+    "compro oro Quito",
+    "joyas Quito",
+    "plata Quito",
+    "relojes Quito",
+    "comprar joyas usadas Quito",
+    "vender joyas Quito",
+  ],
+
+  authors: [{ name: "Compro Oro & Relojes" }],
+  creator: "Compro Oro & Relojes",
+  publisher: "Compro Oro & Relojes",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
+    description:
+      "Compramos oro, plata, joyas y relojes en Quito. Solicita una valoración y cotización por WhatsApp.",
+    url: "https://comprooroplatajoya.vercel.app",
+    siteName: "Compro Oro & Relojes",
+    locale: "es_EC",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
+    description:
+      "Compramos oro, plata, joyas y relojes en Quito, Ecuador. Cotiza tus piezas de forma directa.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({
