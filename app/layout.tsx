@@ -45,21 +45,30 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
-    description:
-      "Compramos oro, plata, joyas y relojes en Quito. Solicita una valoración y cotización por WhatsApp.",
-    url: "https://comprooroplatajoya.vercel.app",
-    siteName: "Compro Oro & Relojes",
-    locale: "es_EC",
-    type: "website",
-  },
+  title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
+  description:
+    "Compramos oro, plata, joyas y relojes en Quito. Solicita una valoración y cotización por WhatsApp.",
+  url: "https://comprooroplatajoya.vercel.app",
+  siteName: "Compro Oro & Relojes",
+  locale: "es_EC",
+  type: "website",
+  images: [
+    {
+      url: "/opengraph-image.png",
+      width: 1200,
+      height: 630,
+      alt: "Compro Oro & Relojes en Quito",
+    },
+  ],
+},
 
   twitter: {
-    card: "summary_large_image",
-    title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
-    description:
-      "Compramos oro, plata, joyas y relojes en Quito, Ecuador. Cotiza tus piezas de forma directa.",
-  },
+  card: "summary_large_image",
+  title: "Compra y Venta de Oro en Quito | Compro Oro & Relojes",
+  description:
+    "Compramos oro, plata, joyas y relojes en Quito, Ecuador. Cotiza tus piezas de forma directa.",
+  images: ["/opengraph-image.png"],
+},
 
   robots: {
     index: true,
