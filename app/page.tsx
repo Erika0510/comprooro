@@ -244,8 +244,10 @@ export default function Home() {
                 </h3>
 
                 <p className="text-sm leading-6 text-[#6B7280]">
-                  Puedes visitarnos personalmente en Avenida La Coruña y 12 de
-                  Octubre, Condominio General Artigas.
+                    Estamos ubicados en Quito, en Avenida La Coruña y 12 de Octubre,
+                    Condominio General Artigas. Nuestro local físico te permite visitarnos,
+                    resolver tus dudas personalmente y realizar la valoración de tus piezas
+                    de forma directa.
                 </p>
               </div>
 
@@ -564,8 +566,9 @@ export default function Home() {
                 </summary>
 
                 <p className="mt-3 text-sm leading-6 text-[#6B7280]">
-                  Estamos en Avenida La Coruña y 12 de Octubre, Condominio
-                  General Artigas, Quito, Ecuador.
+                   Estamos en Avenida La Coruña y 12 de Octubre, Condominio General Artigas,
+                    Quito, Ecuador. Puedes visitarnos en nuestro local físico para recibir
+                     atención personalizada.
                 </p>
               </details>
 
